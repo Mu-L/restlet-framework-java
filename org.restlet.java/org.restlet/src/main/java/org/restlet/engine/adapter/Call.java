@@ -31,7 +31,6 @@ import java.util.logging.Logger;
 import org.restlet.Context;
 import org.restlet.data.Header;
 import org.restlet.data.Protocol;
-import org.restlet.engine.Edition;
 import org.restlet.engine.header.HeaderUtils;
 import org.restlet.representation.InputRepresentation;
 import org.restlet.representation.Representation;

@@ -27,7 +27,6 @@ package org.restlet.engine.connector;
 import org.restlet.Request;
 import org.restlet.Response;
 import org.restlet.Server;
-import org.restlet.engine.Edition;
 
 /**
  * Server connector helper.

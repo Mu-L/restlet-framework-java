@@ -47,7 +47,6 @@ import org.restlet.data.Header;
 import org.restlet.data.MediaType;
 import org.restlet.data.Protocol;
 import org.restlet.data.Status;
-import org.restlet.engine.Edition;
 import org.restlet.engine.adapter.ServerCall;
 import org.restlet.engine.header.HeaderConstants;
 import org.restlet.engine.header.LanguageReader;

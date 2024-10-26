@@ -48,7 +48,6 @@ import java.util.logging.Level;
 import org.restlet.Context;
 import org.restlet.data.CharacterSet;
 import org.restlet.data.Range;
-import org.restlet.engine.Edition;
 import org.restlet.engine.Engine;
 import org.restlet.representation.Representation;
 

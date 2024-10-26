@@ -29,7 +29,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Filter;
 import java.util.logging.Level;
 
-import org.restlet.engine.Edition;
 import org.restlet.engine.Engine;
 import org.restlet.engine.application.ApplicationHelper;
 import org.restlet.engine.resource.AnnotationUtils;

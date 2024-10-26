@@ -29,7 +29,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.restlet.data.MediaType;
-import org.restlet.engine.Edition;
 import org.restlet.representation.FileRepresentation;
 import org.restlet.representation.Representation;
 import org.restlet.service.MetadataService;

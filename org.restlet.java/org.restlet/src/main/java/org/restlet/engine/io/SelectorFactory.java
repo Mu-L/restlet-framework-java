@@ -29,8 +29,6 @@ import java.nio.channels.Selector;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-import org.restlet.engine.Edition;
-
 /**
  * Factory used to dispatch/share <code>Selector</code>.
  * 

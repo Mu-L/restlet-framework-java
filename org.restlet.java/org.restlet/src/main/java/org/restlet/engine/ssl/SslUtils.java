@@ -30,7 +30,6 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.logging.Level;
 
 import org.restlet.Context;
-import org.restlet.engine.Edition;
 import org.restlet.engine.RestletHelper;
 
 /**

@@ -38,7 +38,6 @@ import org.restlet.data.Disposition;
 import org.restlet.data.MediaType;
 import org.restlet.data.Range;
 import org.restlet.data.Tag;
-import org.restlet.engine.Edition;
 import org.restlet.engine.io.IoUtils;
 import org.restlet.engine.util.DateUtils;
 

@@ -33,7 +33,6 @@ import javax.net.ssl.HostnameVerifier;
 import org.restlet.Client;
 import org.restlet.Request;
 import org.restlet.data.Protocol;
-import org.restlet.engine.Edition;
 import org.restlet.engine.adapter.ClientCall;
 import org.restlet.engine.util.ReferenceUtils;
 

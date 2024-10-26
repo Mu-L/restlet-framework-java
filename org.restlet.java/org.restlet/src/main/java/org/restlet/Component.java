@@ -31,7 +31,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Level;
 
 import org.restlet.data.Reference;
-import org.restlet.engine.Edition;
 import org.restlet.engine.Engine;
 import org.restlet.engine.component.ComponentHelper;
 import org.restlet.engine.component.InternalRouter;
