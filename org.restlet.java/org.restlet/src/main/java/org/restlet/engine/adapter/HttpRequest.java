@@ -22,7 +22,6 @@ import java.util.Set;
 import java.util.logging.Level;
 
 import org.restlet.Context;
-import org.restlet.Message;
 import org.restlet.Request;
 import org.restlet.data.CacheDirective;
 import org.restlet.data.ChallengeResponse;
@@ -60,19 +59,6 @@ import org.restlet.util.Series;
  * @author Jerome Louvel
  */
 public class HttpRequest extends Request {
-	/**
-	 * Adds a new header to the given request.
-	 * 
-	 * @param request     The request to update.
-	 * @param headerName  The header name to add.
-	 * @param headerValue The header value to add.
-	 * @deprecated Use {@link Message#getHeaders()} directly instead.
-	 */
-	@Deprecated
-	public static void addHeader(Request request, String headerName, String headerValue) {
-		request.getHeaders().add(new Header(headerName, headerValue));
-	}
-
 	/**
 	 * Indicates if the access control data for request headers was parsed and added
 	 */
