@@ -23,7 +23,9 @@ import org.restlet.engine.io.IoUtils;
  * Representation based on a NIO byte channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public abstract class ChannelRepresentation extends Representation {
 	/**
 	 * Constructor.

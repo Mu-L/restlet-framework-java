@@ -143,6 +143,7 @@ public class HttpUrlConnectionCall extends ClientCall {
 	}
 
 	@Override
+	@Deprecated
 	public WritableByteChannel getRequestEntityChannel() {
 		return null;
 	}
@@ -171,6 +172,7 @@ public class HttpUrlConnectionCall extends ClientCall {
 	}
 
 	@Override
+	@Deprecated
 	public ReadableByteChannel getResponseEntityChannel(long size) {
 		return null;
 	}

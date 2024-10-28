@@ -17,7 +17,9 @@ import org.restlet.util.SelectionRegistration;
  * Callback interface when a NIO selection occurs on the selectable object.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public interface WakeupListener {
 
 	/**

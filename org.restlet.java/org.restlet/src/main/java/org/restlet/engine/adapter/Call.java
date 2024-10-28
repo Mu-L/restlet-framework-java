@@ -222,7 +222,9 @@ public abstract class Call {
 	 * 
 	 * @param channel The response channel.
 	 * @return The wrapping representation.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	protected Representation getRepresentation(java.nio.channels.ReadableByteChannel channel) {
 		return new org.restlet.representation.ReadableRepresentation(channel, null);
 	}

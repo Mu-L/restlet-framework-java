@@ -22,7 +22,9 @@ import org.restlet.representation.Representation;
  * Selection listener notifying new content is read into a {@link ByteBuffer}.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public abstract class ReadingListener implements SelectionListener {
 
 	/** The internal byte buffer. */

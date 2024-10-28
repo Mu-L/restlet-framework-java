@@ -49,6 +49,7 @@ public abstract class OutputRepresentation extends StreamRepresentation {
 	}
 
 	@Override
+	@Deprecated
 	public ReadableByteChannel getChannel() throws IOException {
 		return IoUtils.getChannel(this);
 	}

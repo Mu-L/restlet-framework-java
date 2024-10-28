@@ -26,7 +26,9 @@ import org.restlet.util.SelectionRegistration;
  * Input stream connected to a non-blocking readable channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class NbChannelInputStream extends InputStream {
 
 	/** The internal byte buffer. */

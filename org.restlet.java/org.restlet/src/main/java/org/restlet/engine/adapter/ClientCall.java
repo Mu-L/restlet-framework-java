@@ -93,7 +93,9 @@ public abstract class ClientCall extends Call {
 	 * Returns the request entity channel if it exists.
 	 * 
 	 * @return The request entity channel if it exists.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public abstract java.nio.channels.WritableByteChannel getRequestEntityChannel();
 
 	/**
@@ -165,7 +167,9 @@ public abstract class ClientCall extends Call {
 	 * 
 	 * @param size The expected entity size or -1 if unknown.
 	 * @return The response channel if it exists.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public abstract java.nio.channels.ReadableByteChannel getResponseEntityChannel(long size);
 
 	/**

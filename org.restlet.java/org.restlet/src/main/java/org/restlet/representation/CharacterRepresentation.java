@@ -35,6 +35,7 @@ public abstract class CharacterRepresentation extends Representation {
 	}
 
 	@Override
+	@Deprecated
 	public java.nio.channels.ReadableByteChannel getChannel() throws IOException {
 		return IoUtils.getChannel(getStream());
 	}
@@ -52,6 +53,7 @@ public abstract class CharacterRepresentation extends Representation {
 	}
 
 	@Override
+	@Deprecated
 	public void write(java.nio.channels.WritableByteChannel writableChannel) throws IOException {
 		OutputStream os = IoUtils.getStream(writableChannel);
 		write(os);

@@ -105,7 +105,9 @@ public class EncodeRepresentation extends WrapperRepresentation {
 	 * instance of FileChannel is returned.
 	 * 
 	 * @return A readable byte channel.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	@Override
 	public ReadableByteChannel getChannel() throws IOException {
 		if (canEncode()) {
@@ -270,6 +272,7 @@ public class EncodeRepresentation extends WrapperRepresentation {
 		}
 	}
 
+	@Deprecated
 	@Override
 	public void write(WritableByteChannel writableChannel) throws IOException {
 		if (canEncode()) {

@@ -33,6 +33,7 @@ public class EmptyRepresentation extends Representation {
 	}
 
 	@Override
+	@Deprecated
 	public java.nio.channels.ReadableByteChannel getChannel() throws IOException {
 		return null;
 	}
@@ -58,6 +59,7 @@ public class EmptyRepresentation extends Representation {
 	}
 
 	@Override
+	@Deprecated
 	public void write(java.nio.channels.WritableByteChannel writableChannel) throws IOException {
 		// Do nothing
 	}

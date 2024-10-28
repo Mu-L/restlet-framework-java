@@ -22,7 +22,9 @@ import java.nio.channels.WritableByteChannel;
  * Output stream connected to a non-blocking writable channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class NbChannelOutputStream extends OutputStream {
 
 	/** The internal byte buffer. */

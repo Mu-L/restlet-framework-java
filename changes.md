@@ -21,6 +21,8 @@ Changes log
       - Renamed extension Inject into Guice as it isn't truly generic.
       - Updated the links in all Javadocs file for accuracy.
       - Deprecated GAE, GWT, OSGi and RDF extensions for removal in next major release.
+      - Deprecated NIO flavor of Restlet API for removal in next major release, with plan to use
+        virtual threads instead to achieve additional scalability and reactive behavior.
 
 - 2.5 Milestone 1 (03/09/2020)
     - Bugs fixed
