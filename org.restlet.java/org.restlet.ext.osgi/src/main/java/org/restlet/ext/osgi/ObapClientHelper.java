@@ -35,7 +35,9 @@ import org.restlet.service.MetadataService;
  * Connector to the resources accessed via bundles.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class ObapClientHelper extends LocalClientHelper {
 
     /** Map of registered bundles. */

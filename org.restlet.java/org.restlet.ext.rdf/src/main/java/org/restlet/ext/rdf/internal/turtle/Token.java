@@ -18,7 +18,9 @@ import org.restlet.ext.rdf.internal.RdfConstants;
  * Represents a still unidentified Turtle token.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Token extends LexicalUnit {
 
     /**

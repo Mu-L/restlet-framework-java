@@ -15,7 +15,9 @@ import org.restlet.data.Reference;
  * Constants related to RDF documents.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfConstants {
 
     /** List "first". */

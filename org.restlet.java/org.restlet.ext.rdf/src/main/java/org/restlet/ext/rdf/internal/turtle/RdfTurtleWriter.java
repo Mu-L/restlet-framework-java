@@ -24,7 +24,9 @@ import org.restlet.ext.rdf.internal.RdfConstants;
  * Handler of RDF content according to the N3 notation.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfTurtleWriter extends GraphHandler {
 
     /** The current context object. */

@@ -20,7 +20,9 @@ import org.restlet.resource.ServerResource;
  * 
  * @author Bryan Hunt
  * @author Wolfgang Werner
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class DynamicFinder extends Finder {
     private Bundle bundle;
 

@@ -17,7 +17,9 @@ import org.restlet.data.Reference;
  * Represents a URI token inside a RDF Turtle document.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class UriToken extends LexicalUnit {
     /**
      * Constructor with arguments.

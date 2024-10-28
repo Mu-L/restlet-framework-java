@@ -17,7 +17,8 @@ package org.restlet.ext.osgi;
  * implementation of {@link RouterProvider}.
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface RouterProvider extends RestletProvider {
 }

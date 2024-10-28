@@ -25,7 +25,9 @@ import org.restlet.ext.rdf.internal.turtle.Context;
  * Handler of RDF content according to the N3 notation.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfN3Writer extends GraphHandler {
 
     /** The current context object. */

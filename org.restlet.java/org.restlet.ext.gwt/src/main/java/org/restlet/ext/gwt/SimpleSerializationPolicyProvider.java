@@ -17,7 +17,9 @@ import com.google.gwt.user.server.rpc.SerializationPolicyProvider;
  * {@link SimpleSerializationPolicy} default instance all the time.
  * 
  * @author Jerome Louvel
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class SimpleSerializationPolicyProvider implements
         SerializationPolicyProvider {
 

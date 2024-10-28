@@ -57,8 +57,9 @@ import org.restlet.routing.Filter;
  * </p>
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class BaseFilterProvider extends BaseRestletProvider implements
         FilterProvider {
     private Filter filter;

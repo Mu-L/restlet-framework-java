@@ -22,7 +22,9 @@ import org.restlet.ext.rdf.Literal;
  * Handler of RDF content according to the N-Triples notation.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfNTriplesWriter extends GraphHandler {
 
     /** The character writer. */

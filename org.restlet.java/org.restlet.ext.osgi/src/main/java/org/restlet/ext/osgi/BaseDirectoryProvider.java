@@ -66,8 +66,9 @@ import org.restlet.resource.Directory;
  * </p>
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class BaseDirectoryProvider extends BaseRestletProvider implements
         DirectoryProvider {
     private boolean deeplyAccessible = true;

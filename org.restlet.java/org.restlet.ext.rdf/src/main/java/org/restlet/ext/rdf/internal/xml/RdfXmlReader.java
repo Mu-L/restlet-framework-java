@@ -20,7 +20,9 @@ import org.restlet.representation.Representation;
  * Handler of RDF content according to the RDF/XML format.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfXmlReader extends RdfReader {
 
     /**

@@ -16,7 +16,9 @@ import org.restlet.data.Reference;
 /**
  * Handler for the content of a {@link Graph}. List of callbacks used when
  * parsing or writing a representation of a RDF graph.
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class GraphHandler {
 
     /**

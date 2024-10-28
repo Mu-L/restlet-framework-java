@@ -19,7 +19,9 @@ import org.restlet.ext.rdf.Literal;
  * language.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class StringToken extends LexicalUnit {
     /** The language of the value. */
     private String language;

@@ -14,7 +14,9 @@ import org.restlet.data.Reference;
 /**
  * Graph handler used when parsing an RDF representation. It completes the inner
  * set of links with all detected ones.
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class GraphBuilder extends GraphHandler {
 
     /** The inner graph of links. */

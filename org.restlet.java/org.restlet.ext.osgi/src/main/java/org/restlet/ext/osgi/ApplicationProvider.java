@@ -26,7 +26,9 @@ import org.restlet.Context;
  * 
  * @author Bryan Hunt
  * @author Wolfgang Werner
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface ApplicationProvider {
     /**
      * The key constant that may be used to look up the

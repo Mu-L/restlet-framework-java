@@ -25,7 +25,9 @@ import com.google.appengine.api.users.UserServiceFactory;
  * UserService.
  * 
  * @author Matt Kennedy
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class GaeAuthenticator extends Authenticator {
     /**
      * The GAE UserService that provides facilities to check whether a user has

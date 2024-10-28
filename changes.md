@@ -20,6 +20,7 @@ Changes log
       - Removed incubator to rely instead on pull requests.
       - Renamed extension Inject into Guice as it isn't truly generic.
       - Updated the links in all Javadocs file for accuracy.
+      - Deprecated GAE, GWT, OSGi and RDF extensions for removal in next major release.
 
 - 2.5 Milestone 1 (03/09/2020)
     - Bugs fixed
