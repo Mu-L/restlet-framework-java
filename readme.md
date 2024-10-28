@@ -1,14 +1,12 @@
 # Restlet Framework
 
 
-[![Build Status](https://github.com/restlet/restlet-framework-java/actions/workflows/build.yaml/badge.svg)](https://github.com/restlet/restlet-framework-java/actions/workflows/ci.yaml)
-
-[![Apache License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
+[![Build Status](https://github.com/restlet/restlet-framework-java/actions/workflows/build.yaml/badge.svg)](https://github.com/restlet/restlet-framework-java/actions/workflows/ci.yaml) [![Apache License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## The first REST framework for Java
 
-Launched in 2005, Restlet Framework was the very first open source project embracing REST in the Java world.
+Launched in 2005, Restlet Framework was the first open source framework embracing [REST](https://en.wikipedia.org/wiki/REST)
+in the Java world.
 
 Since its inception, its Java API has closely matched the concepts and terms of the REST architecture stlye and the HTTP protocol.
 It also offers powerful and dynamic routing and security features, a unified client and server Java API. While it can be embedded
@@ -17,8 +15,6 @@ footprint, while enabling the development of any RESTful web API or application.
 
 It is available in a Java edition compatible with Java SE/EE, Google App Engine, OSGi and Android environments,
 as well as in a separate GWT edition.
-
-It is available under the terms of either the Apache Software License 2.0.
 
 http://restlet.talend.com
 
