@@ -18,22 +18,22 @@
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-			<version>${lib-codec-version}</version>
+			<version>${lib-commons-codec-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>${lib-httpclient-version}</version>
+			<version>${lib-commons-httpclient-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
-			<version>${lib-httpcore-version}</version>
+			<version>${lib-commons-httpcore-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpmime</artifactId>
-			<version>${lib-httpmime-version}</version>
+			<version>${lib-commons-httpmime-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.jcip</groupId>
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging</artifactId>
-			<version>${lib-logging-version}</version>
+			<version>${lib-commons-logging-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.james</groupId>

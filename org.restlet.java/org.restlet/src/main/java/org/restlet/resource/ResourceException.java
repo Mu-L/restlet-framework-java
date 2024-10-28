@@ -23,13 +23,13 @@ public class ResourceException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 
 	/** The status associated to this exception. */
-	private final Status status;
+	private transient Status status;
 
 	/** The request associated to this exception. Could be null. */
-	private final Request request;
+	private transient Request request;
 
 	/** The response associated to this exception. Could be null. */
-	private final Response response;
+	private transient Response response;
 
 	/**
 	 * Constructor.

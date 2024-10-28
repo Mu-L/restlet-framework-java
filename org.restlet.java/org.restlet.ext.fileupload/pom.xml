@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
-			<version>${lib-fileupload-version}</version>
+			<version>${lib-commons-fileupload-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.restlet</groupId>
