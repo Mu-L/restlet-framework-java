@@ -24,6 +24,7 @@ public final class Status {
 	private static final String BASE_RESTLET = "https://javadocs.restlet.talend.com/" + Engine.MAJOR_NUMBER + '.'
 			+ Engine.MINOR_NUMBER + "/api/";
 
+	@Deprecated
 	private static final String BASE_WEBDAV = "http://www.webdav.org/specs/rfc2518.html";
 
 	/**
@@ -62,7 +63,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_424">WEBDAV RFC
 	 *      - 10.5 424 Failed Dependency</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status CLIENT_ERROR_FAILED_DEPENDENCY = new Status(424);
 
 	/**
@@ -100,7 +103,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_423">WEBDAV RFC
 	 *      - 10.4 423 Locked</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status CLIENT_ERROR_LOCKED = new Status(423);
 
 	/**
@@ -229,7 +234,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_422">WEBDAV RFC
 	 *      - 10.3 422 Unprocessable Entity</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status CLIENT_ERROR_UNPROCESSABLE_ENTITY = new Status(422);
 
 	/**
@@ -312,7 +319,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_102">WEBDAV RFC
 	 *      - 10.1 102 Processing</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status INFO_PROCESSING = new Status(102);
 
 	/**
@@ -446,7 +455,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_507">WEBDAV RFC
 	 *      - 10.6 507 Insufficient Storage</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status SERVER_ERROR_INSUFFICIENT_STORAGE = new Status(507);
 
 	/**
@@ -524,7 +535,9 @@ public final class Status {
 	 * 
 	 * @see <a href="http://www.webdav.org/specs/rfc2518.html#STATUS_207">WEBDAV RFC
 	 *      - 10.2 207 Multi-Status</a>
+	 * @deprecated Will be removed in next version.
 	 */
+	@Deprecated
 	public static final Status SUCCESS_MULTI_STATUS = new Status(207);
 
 	/**
