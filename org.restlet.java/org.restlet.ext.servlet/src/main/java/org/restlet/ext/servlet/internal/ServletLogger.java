@@ -12,6 +12,8 @@ package org.restlet.ext.servlet.internal;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
+import javax.servlet.ServletContext;
+
 /**
  * Logger that wraps the logging methods of javax.servlet.ServletContext.
  * 
@@ -19,7 +21,7 @@ import java.util.logging.Logger;
  */
 public class ServletLogger extends Logger {
     /** The Servlet context to use for logging. */
-    private volatile javax.servlet.ServletContext context;
+    private volatile ServletContext context;
 
     /**
      * Constructor.
@@ -37,7 +39,7 @@ public class ServletLogger extends Logger {
      * 
      * @return The Servlet context to use for logging.
      */
-    private javax.servlet.ServletContext getContext() {
+    protected ServletContext getContext() {
         return this.context;
     }
 

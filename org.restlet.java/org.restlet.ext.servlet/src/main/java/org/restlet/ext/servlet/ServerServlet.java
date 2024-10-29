@@ -16,6 +16,7 @@ import java.util.Enumeration;
 import java.util.List;
 
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,7 +35,9 @@ import org.restlet.engine.Engine;
 import org.restlet.engine.adapter.HttpServerHelper;
 import org.restlet.engine.adapter.ServerCall;
 import org.restlet.engine.component.ComponentContext;
+import org.restlet.engine.log.LoggerFacade;
 import org.restlet.ext.servlet.internal.ServletCall;
+import org.restlet.ext.servlet.internal.ServletLoggerFacade;
 import org.restlet.ext.servlet.internal.ServletWarClient;
 import org.restlet.representation.Representation;
 import org.restlet.routing.Route;
@@ -491,6 +494,17 @@ public class ServerServlet extends HttpServlet {
     }
 
     /**
+     * Creates a new logger facade to be set in the Restlet Engine. By default it
+     * redirects all logging call to the
+     * {@link ServletContext#log(String, Throwable)} method.
+     * 
+     * @return A new logger facade to be set in the Restlet Engine.
+    */
+    protected LoggerFacade createLoggerFacade() {
+        return new ServletLoggerFacade(getServletContext());
+    }
+
+    /**
      * Creates the associated HTTP server handling calls.
      * 
      * @param request
@@ -939,8 +953,18 @@ public class ServerServlet extends HttpServlet {
         return result;
     }
 
+    /**
+     * If no logger facade class has been set for the Restlet Engine in system
+     * properties, then pro-actively set a logger facade that will send all logging
+     * calls to the {@link ServletContext#log(String, Throwable)} method. Then, get
+     * the Restlet Component and starts it, triggering additional creation methods.
+     */
     @Override
     public void init() throws ServletException {
+        if (System.getProperty("org.restlet.engine.loggerFacadeClass") == null) {
+            Engine.getInstance().setLoggerFacade(createLoggerFacade());
+        }
+
         if ((getComponent() != null) && (getComponent().isStopped())) {
             try {
                 getComponent().start();
