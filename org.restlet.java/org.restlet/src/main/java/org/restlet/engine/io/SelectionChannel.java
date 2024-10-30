@@ -17,7 +17,9 @@ import org.restlet.util.SelectionRegistration;
  * NIO channel that is based on a selectable channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public interface SelectionChannel extends Channel, BlockableChannel {
 
 	/**

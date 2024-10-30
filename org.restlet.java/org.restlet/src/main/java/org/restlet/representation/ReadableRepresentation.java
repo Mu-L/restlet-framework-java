@@ -20,7 +20,9 @@ import org.restlet.engine.io.IoUtils;
  * Transient representation based on a readable NIO byte channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class ReadableRepresentation extends ChannelRepresentation {
 
 	/** The representation's input stream. */

@@ -30,7 +30,9 @@ import org.restlet.engine.io.WakeupListener;
  * 
  * @author Jerome Louvel
  * @see SelectionKey
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class SelectionRegistration {
 
 	/**

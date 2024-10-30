@@ -232,7 +232,9 @@ public abstract class Representation extends RepresentationInfo {
 	 * 
 	 * @return A channel with the representation's content.
 	 * @throws IOException
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public abstract java.nio.channels.ReadableByteChannel getChannel() throws IOException;
 
 	/**
@@ -302,7 +304,9 @@ public abstract class Representation extends RepresentationInfo {
 	 * @return The NIO registration.
 	 * @throws IOException
 	 * @see #isSelectable()
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public org.restlet.util.SelectionRegistration getRegistration() throws IOException {
 		if (isSelectable()) {
 			return ((org.restlet.engine.io.SelectionChannel) getChannel()).getRegistration();
@@ -402,7 +406,9 @@ public abstract class Representation extends RepresentationInfo {
 	 * content is ready for reading.
 	 * 
 	 * @return True if the representation content supports NIO selection.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public boolean isSelectable() {
 		try {
 			return getChannel() instanceof org.restlet.engine.io.SelectionChannel;
@@ -498,7 +504,9 @@ public abstract class Representation extends RepresentationInfo {
 	 * existing listener.
 	 * 
 	 * @param readingListener The listener for NIO read events.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public void setListener(org.restlet.util.ReadingListener readingListener) {
 		try {
 			org.restlet.util.SelectionRegistration sr = getRegistration();
@@ -571,7 +579,9 @@ public abstract class Representation extends RepresentationInfo {
 	 * 
 	 * @param writableChannel A writable byte channel.
 	 * @throws IOException
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public abstract void write(java.nio.channels.WritableByteChannel writableChannel) throws IOException;
 
 	/**

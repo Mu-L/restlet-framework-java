@@ -15,7 +15,9 @@ import java.nio.channels.ReadableByteChannel;
  * Readable byte channel that is based on a selectable channel.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public interface ReadableSelectionChannel extends SelectionChannel, ReadableByteChannel {
 
 }

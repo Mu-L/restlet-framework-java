@@ -18,7 +18,9 @@ import java.util.Stack;
  * Factory used to dispatch/share <code>Selector</code>.
  * 
  * @author Jean-Francois Arcand
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class SelectorFactory {
 	/** The maximum number of <code>Selector</code> to create. */
 	public static final int MAX_SELECTORS = 20;

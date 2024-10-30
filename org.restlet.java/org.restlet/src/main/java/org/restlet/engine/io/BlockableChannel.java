@@ -15,7 +15,9 @@ import java.nio.channels.Channel;
  * NIO channel that can indicate if it is blocking or non blocking.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public interface BlockableChannel extends Channel {
 
 	/**

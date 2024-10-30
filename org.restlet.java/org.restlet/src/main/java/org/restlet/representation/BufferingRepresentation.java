@@ -85,6 +85,7 @@ public class BufferingRepresentation extends WrapperRepresentation {
 	}
 
 	@Override
+	@Deprecated
 	public java.nio.channels.ReadableByteChannel getChannel() throws IOException {
 		return IoUtils.getChannel(getStream());
 	}
@@ -172,6 +173,7 @@ public class BufferingRepresentation extends WrapperRepresentation {
 	}
 
 	@Override
+	@Deprecated
 	public void write(WritableByteChannel writableChannel) throws IOException {
 		buffer();
 
