@@ -26,10 +26,7 @@ import org.restlet.Application;
 import org.restlet.Client;
 import org.restlet.Component;
 import org.restlet.Context;
-import org.restlet.Request;
-import org.restlet.Response;
 import org.restlet.Server;
-import org.restlet.data.Method;
 import org.restlet.data.Protocol;
 import org.restlet.engine.Engine;
 import org.restlet.engine.adapter.HttpServerHelper;
@@ -404,7 +401,6 @@ public class ServerServlet extends HttpServlet {
 
         if (targetClass != null) {
             try {
-                            .getConstructor();
                 @SuppressWarnings("unchecked")
                 Constructor<? extends Component> ctor = ((Class<? extends Component>) targetClass)
                         .getConstructor();
