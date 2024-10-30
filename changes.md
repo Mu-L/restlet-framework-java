@@ -20,6 +20,8 @@ Changes log
       - Removed incubator to rely instead on pull requests.
       - Renamed extension Inject into Guice as it isn't truly generic.
       - Updated the links in all Javadocs file for accuracy.
+      - Removed code deprecated in version 2.4, including native Restlet XML configuration mechasism.
+        Please use Spring for an alternative approach if needed.
 
 - 2.5 Milestone 1 (03/09/2020)
     - Bugs fixed

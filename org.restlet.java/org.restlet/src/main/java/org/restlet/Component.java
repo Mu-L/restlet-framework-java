@@ -9,18 +9,12 @@
 
 package org.restlet;
 
-import java.io.File;
-import java.net.URI;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.logging.Level;
 
-import org.restlet.data.Reference;
 import org.restlet.engine.Engine;
 import org.restlet.engine.component.ComponentHelper;
 import org.restlet.engine.component.InternalRouter;
-import org.restlet.representation.Representation;
-import org.restlet.resource.ClientResource;
 import org.restlet.routing.Router;
 import org.restlet.routing.VirtualHost;
 import org.restlet.security.Realm;
@@ -43,38 +37,6 @@ import org.restlet.util.ServiceList;
  * that provides a transformation of data via its interface." Roy T.
  * Fielding<br>
  * <br>
- * The configuration of a Component can be done programmatically or by using a
- * XML document. There are dedicated constructors that accept either an URI
- * reference to such XML document or a representation of such XML document,
- * allowing easy configuration of the list of supported client and server
- * connectors as well as services. In addition, you can add and configure
- * virtual hosts (including the default one). Finally, you can attach
- * applications either using their fully qualified class name or by pointing to
- * a descriptor document (at this time only WADL description are supported, see
- * the WADL Restlet extension for details).<br>
- * <br>
- * The XML Schema of the configuration files is available inside the API JAR
- * under the "org.restlet.Component.xsd" name. Here is a sample of XML
- * configuration:
- * 
- * <pre>
- * &lt;?xml version=&quot;1.0&quot;?&gt;
- * &lt;component xmlns=&quot;http://restlet.org/schemas/2.0/Component&quot;&gt;
- *    &lt;client protocol=&quot;CLAP&quot; /&gt;
- *    &lt;client protocol=&quot;FILE&quot; /&gt;
- *    &lt;client protocols=&quot;HTTP HTTPS&quot; /&gt;
- *    &lt;server protocols=&quot;HTTP HTTPS&quot; /&gt;
- * 
- *    &lt;defaultHost&gt;
- *       &lt;attach uriPattern=&quot;/abcd/{xyz}&quot; 
- *                  targetClass=&quot;org.restlet.test.MyApplication&quot; /&gt;
- *       &lt;attach uriPattern=&quot;/efgh/{xyz}&quot;
- *                  targetDescriptor=&quot;clap://class/org/restlet/test/MyApplication.wadl&quot; /&gt;
- *    &lt;/defaultHost&gt;
- * &lt;/component&gt;
- * </pre>
- * 
- * <br>
  * Components also have useful services associated. They are all enabled by
  * default and are available as properties that can be eventually overridden:
  * <ul>
@@ -95,32 +57,6 @@ import org.restlet.util.ServiceList;
  * @author Jerome Louvel
  */
 public class Component extends Restlet {
-
-	/**
-	 * Used as bootstrap for configuring and running a component in command line.
-	 * Just provide as first and unique parameter the URI to the XML file. Note that
-	 * relative paths are accepted.
-	 *
-	 * @param args The list of in-line parameters.
-	 * @deprecated Use XML support in the Spring extension instead.
-	 */
-	@Deprecated
-	public static void main(String[] args) throws Exception {
-		try {
-			if ((args == null) || (args.length != 1)) {
-				// Display program arguments
-				System.err.println("Can't launch the component. Requires the path to an XML configuration file.\n");
-			} else {
-				// Create and start the component
-				URI currentDirURI = (new File(".")).toURI();
-				URI confURI = currentDirURI.resolve(args[0]);
-				new Component(confURI.toString()).start();
-			}
-		} catch (Exception e) {
-			System.err.println("Can't launch the component.\nAn unexpected exception occurred:");
-			e.printStackTrace(System.err);
-		}
-	}
 
 	/** The modifiable list of client connectors. */
 	private final ClientList clients;
@@ -175,61 +111,6 @@ public class Component extends Restlet {
 			this.clients.setContext(childContext);
 			this.servers.setContext(childContext);
 		}
-	}
-
-	/**
-	 * Constructor with the reference to the XML configuration file.
-	 * 
-	 * @param xmlConfigRef The URI reference to the XML configuration file.
-	 * @deprecated Use XML support in the Spring extension instead.
-	 */
-	@Deprecated
-	public Component(Reference xmlConfigRef) {
-		this();
-
-		// Get the representation of the configuration file.
-		Representation xmlConfigRepresentation = null;
-
-		if (xmlConfigRef != null) {
-			ClientResource cr = new ClientResource(xmlConfigRef);
-			xmlConfigRepresentation = cr.get();
-
-			if (xmlConfigRepresentation != null) {
-				new org.restlet.engine.component.ComponentXmlParser(this, xmlConfigRepresentation).parse();
-			} else {
-				getLogger().log(Level.WARNING,
-						"Unable to get the Component XML configuration located at this URI: " + xmlConfigRef);
-			}
-		}
-	}
-
-	/**
-	 * Constructor with the representation of the XML configuration file.
-	 * 
-	 * @param xmlConfigRepresentation The representation of the XML configuration
-	 *                                file.
-	 * @deprecated Use XML support in the Spring extension instead.
-	 */
-	@Deprecated
-	public Component(Representation xmlConfigRepresentation) {
-		this();
-
-		if (xmlConfigRepresentation != null) {
-			new org.restlet.engine.component.ComponentXmlParser(this, xmlConfigRepresentation).parse();
-		} else {
-			getLogger().log(Level.WARNING, "Unable to parse the Component XML configuration.");
-		}
-	}
-
-	/**
-	 * Constructor with the URI reference to the XML configuration file.
-	 * 
-	 * @param xmlConfigurationRef The URI reference to the XML configuration file.
-	 * @deprecated Use XML support in the Spring extension instead.
-	 */
-	@Deprecated
-	public Component(String xmlConfigurationRef) {
-		this((xmlConfigurationRef == null) ? null : new Reference(xmlConfigurationRef));
 	}
 
 	/**
