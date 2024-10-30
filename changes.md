@@ -1,7 +1,7 @@
 Changes log
 ===========
 
-- 2.5 Milestone 2 (???/2024)
+- 2.5 Milestone 2 (??-11-2024)
     - Enhancements
       - Changed the minimum requirements back to Java 8 like for Restlet Framework 2.4 to facilitate upgrade.
       - Transitioned project to native Maven including code base, build and delivery.
@@ -20,13 +20,13 @@ Changes log
       - Removed incubator to rely instead on pull requests.
       - Renamed extension Inject into Guice as it isn't truly generic.
       - Updated the links in all Javadocs file for accuracy.
-      - Deprecated GAE, GWT, OSGi and RDF extensions for removal in next major release.
+      - Deprecated GAE, OSGi and RDF extensions for removal in next major release.
       - Deprecated NIO flavor of Restlet API for removal in next major release, with plan to use
         virtual threads instead to achieve additional scalability and reactive behavior.
       - Removed code deprecated in version 2.4, including native Restlet XML configuration mechasism.
         Please use Spring for an alternative approach if needed.
 
-- 2.5 Milestone 1 (03/09/2020)
+- 2.5 Milestone 1 (03-09-2020)
     - Bugs fixed
       - Allow parsing of double values like "2.0" or "4.0" being received in
         the Retry-After header. Issue #1355.
