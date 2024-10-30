@@ -18,7 +18,9 @@ import org.restlet.Restlet;
  * specialized provider interfaces.
  * 
  * @author Bryan Hunt
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface RestletProvider {
     /**
      * 

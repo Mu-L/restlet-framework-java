@@ -23,7 +23,9 @@ import org.restlet.data.Reference;
  * 
  * @author Jerome Louvel
  * @see <a href="http://www.w3.org/TR/rdf-concepts/">RDF concepts</a>
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Link {
 
     /**

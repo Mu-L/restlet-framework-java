@@ -33,7 +33,9 @@ import org.restlet.resource.ClientResource;
  * navigate the Web of data.
  * 
  * @author Jerome Louvel
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfClientResource extends ClientResource {
 
     /** The links cache. */

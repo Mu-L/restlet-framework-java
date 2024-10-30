@@ -17,7 +17,9 @@ import org.restlet.representation.Representation;
 /**
  * Super class of all RDF readers.
  * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class RdfReader {
     /** The graph handler invoked when parsing. */
     private GraphHandler graphHandler;

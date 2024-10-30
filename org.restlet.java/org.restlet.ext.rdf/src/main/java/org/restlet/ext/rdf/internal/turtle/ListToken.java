@@ -20,7 +20,9 @@ import org.restlet.ext.rdf.internal.RdfConstants;
  * Represents a list of Turtle tokens.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class ListToken extends LexicalUnit {
     /** The list of contained tokens. */
     List<LexicalUnit> lexicalUnits;

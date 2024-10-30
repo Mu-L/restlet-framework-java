@@ -57,8 +57,9 @@ import org.restlet.Context;
  * </p>
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class BaseApplicationProvider implements ApplicationProvider {
     private String alias;
 

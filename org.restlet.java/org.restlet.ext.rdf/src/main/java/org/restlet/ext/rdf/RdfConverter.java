@@ -24,7 +24,9 @@ import org.restlet.resource.Resource;
  * Converter between the Graph and RDF Representation classes.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfConverter extends ConverterHelper {
 
     private static final VariantInfo VARIANT_RDF_N3 = new VariantInfo(

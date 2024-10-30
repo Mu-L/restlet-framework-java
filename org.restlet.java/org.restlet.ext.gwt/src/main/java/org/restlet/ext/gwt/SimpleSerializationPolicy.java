@@ -17,7 +17,9 @@ import com.google.gwt.user.server.rpc.SerializationPolicy;
  * fields.
  * 
  * @author Jerome Louvel
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class SimpleSerializationPolicy extends SerializationPolicy {
 
     private static final SimpleSerializationPolicy instance = new SimpleSerializationPolicy();

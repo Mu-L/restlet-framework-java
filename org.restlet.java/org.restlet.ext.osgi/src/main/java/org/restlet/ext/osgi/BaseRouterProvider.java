@@ -53,8 +53,9 @@ import org.restlet.routing.TemplateRoute;
  * </p>
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class BaseRouterProvider extends BaseRestletProvider implements
         RouterProvider {
     private RestletProvider defaultRestletProvider;

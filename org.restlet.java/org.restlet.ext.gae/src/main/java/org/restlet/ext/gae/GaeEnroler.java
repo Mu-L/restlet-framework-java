@@ -21,7 +21,9 @@ import com.google.appengine.api.users.UserServiceFactory;
  * {@link ClientInfo} if the GAE API reports that the user is an administrator.
  * 
  * @author Matt Kennedy
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class GaeEnroler implements Enroler {
 
     /** The Administrator role. */
