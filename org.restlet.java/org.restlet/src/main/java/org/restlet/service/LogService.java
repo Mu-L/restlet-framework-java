@@ -11,7 +11,6 @@ package org.restlet.service;
 
 import java.util.logging.Level;
 
-import org.restlet.Application;
 import org.restlet.Context;
 import org.restlet.Request;
 import org.restlet.Response;
