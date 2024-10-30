@@ -40,21 +40,6 @@ public class ZipEntryRepresentation extends StreamRepresentation {
 	/**
 	 * Constructor.
 	 * 
-	 * @param mediaType The entry media type.
-	 * @param zipFile   The parent Zip archive file.
-	 * @param entry     The Zip entry.
-	 * @deprecated Use
-	 *             {@link #ZipEntryRepresentation(MediaType, ZipFile, ZipEntry, int)}
-	 *             instead.
-	 */
-	@Deprecated
-	public ZipEntryRepresentation(MediaType mediaType, ZipFile zipFile, ZipEntry entry) {
-		this(mediaType, zipFile, entry, -1);
-	}
-
-	/**
-	 * Constructor.
-	 * 
 	 * @param mediaType  The entry media type.
 	 * @param zipFile    The parent Zip archive file.
 	 * @param entry      The Zip entry.
