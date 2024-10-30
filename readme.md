@@ -13,8 +13,6 @@ While it can be embedded within a Servlet container, it can also operate as a st
 footprint, while enabling the development of any RESTful web API or application. It is available in a Java edition compatible with Java SE/EE,
 Google App Engine, OSGi and Android environments, as well as in a separate GWT edition.
 
-http://restlet.talend.com
-
 ## Learn more
 
 To learn more about Restlet Framework, please have a look at the following resources:
