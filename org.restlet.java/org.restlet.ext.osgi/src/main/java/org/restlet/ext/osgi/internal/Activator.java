@@ -24,7 +24,9 @@ import org.restlet.ext.osgi.ObapClientHelper;
  * 
  * @author Thierry Boileau
  * @See {@link ObapClientHelper}
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Activator implements BundleActivator {
 
     private static Logger logger = Logger.getLogger("org.restlet.ext.osgi");

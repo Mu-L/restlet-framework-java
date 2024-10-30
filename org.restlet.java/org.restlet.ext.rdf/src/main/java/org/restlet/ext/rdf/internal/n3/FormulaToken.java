@@ -19,7 +19,9 @@ import org.restlet.ext.rdf.internal.turtle.LexicalUnit;
  * feature is not supported yet.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class FormulaToken extends LexicalUnit {
 
     public FormulaToken(RdfN3Reader contentHandler, Context context)

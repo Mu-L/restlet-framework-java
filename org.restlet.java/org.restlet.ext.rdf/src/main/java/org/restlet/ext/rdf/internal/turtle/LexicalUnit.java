@@ -15,7 +15,9 @@ import java.io.IOException;
  * Represents a lexical unit inside a Turtle document.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class LexicalUnit {
 
     /** The content handler of the current Turtle document. */

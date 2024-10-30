@@ -18,7 +18,9 @@ import java.nio.channels.ReadableByteChannel;
  * Readable byte channel wrapping an input stream.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public class InputStreamChannel implements ReadableByteChannel, BlockableChannel {
 
 	/** The underlying input stream. */

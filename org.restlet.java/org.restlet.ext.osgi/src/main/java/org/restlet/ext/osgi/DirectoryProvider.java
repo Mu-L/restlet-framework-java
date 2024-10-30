@@ -17,7 +17,9 @@ package org.restlet.ext.osgi;
  * implementation of {@link DirectoryProvider}.
  * 
  * @author Bryan Hunt
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface DirectoryProvider extends RestletProvider {
     /**
      * 

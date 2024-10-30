@@ -784,6 +784,7 @@ public class Engine {
 	/**
 	 * Registers the default protocols.
 	 */
+	@SuppressWarnings("deprecation")
 	public void registerDefaultProtocols() {
 		getRegisteredProtocols().add(new org.restlet.engine.connector.HttpProtocolHelper());
 		getRegisteredProtocols().add(new org.restlet.engine.connector.WebDavProtocolHelper());

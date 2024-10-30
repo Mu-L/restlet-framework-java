@@ -19,7 +19,9 @@ import org.restlet.routing.Filter;
  * {@link FilterProvider} if you need complete control.
  * 
  * @author Bryan Hunt
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface FilterProvider extends RestletProvider {
     /**
      * 

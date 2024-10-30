@@ -21,19 +21,13 @@ import com.google.appengine.api.users.UserServiceFactory;
  * {@link ClientInfo} if the GAE API reports that the user is an administrator.
  * 
  * @author Matt Kennedy
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class GaeEnroler implements Enroler {
 
     /** The Administrator role. */
     private Role adminRole;
-
-    /**
-     * Default constructor. It defines an administrator role, which name is
-     * "admin".
-     */
-    public GaeEnroler() {
-        this("admin", "Administrator of the current application.");
-    }
 
     /**
      * Constructor.
@@ -71,32 +65,6 @@ public class GaeEnroler implements Enroler {
      */
     public GaeEnroler(Role adminRole) {
         setAdminRole(adminRole);
-    }
-
-    /**
-     * Constructor.
-     * 
-     * @param adminRoleName
-     *            The name of the administrator role.
-     * @deprecated Use {@link #GaeEnroler(Application, String)} instead.
-     */
-    @Deprecated
-    public GaeEnroler(String adminRoleName) {
-        this(adminRoleName, "Administrator of the current application.");
-    }
-
-    /**
-     * Constructor.
-     * 
-     * @param adminRoleName
-     *            The name of the administrator role.
-     * @param adminRoleDescription
-     *            The description of the administrator role.
-     * @deprecated Use {@link #GaeEnroler(Application, String, String)} instead.
-     */
-    @Deprecated
-    public GaeEnroler(String adminRoleName, String adminRoleDescription) {
-        this(new Role(adminRoleName, adminRoleDescription));
     }
 
     /**

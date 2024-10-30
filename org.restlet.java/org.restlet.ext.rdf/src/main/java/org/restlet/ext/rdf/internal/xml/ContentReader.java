@@ -30,7 +30,9 @@ import org.xml.sax.helpers.DefaultHandler;
  * Content reader part.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 class ContentReader extends DefaultHandler {
     public enum State {
         LITERAL, NONE, OBJECT, PREDICATE, SUBJECT

@@ -26,7 +26,9 @@ import org.restlet.representation.Representation;
  * Handler of RDF content according to the N-Triples notation.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfNTriplesReader extends RdfReader {
 
     /** Internal buffered reader. */

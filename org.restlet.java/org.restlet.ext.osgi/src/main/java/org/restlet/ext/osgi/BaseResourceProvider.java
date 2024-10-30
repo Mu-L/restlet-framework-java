@@ -61,8 +61,9 @@ import org.restlet.routing.Template;
  * </p>
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class BaseResourceProvider extends BaseRestletProvider
         implements ResourceProvider {
     private Finder finder;

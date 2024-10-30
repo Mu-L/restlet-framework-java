@@ -22,7 +22,9 @@ import org.restlet.engine.util.SystemUtils;
  *            The first object's type.
  * @param <U>
  *            The second object's type.
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Couple<T, U> {
 
     /** The first object. */

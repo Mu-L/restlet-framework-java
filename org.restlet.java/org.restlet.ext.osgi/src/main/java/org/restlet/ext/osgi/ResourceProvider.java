@@ -25,7 +25,9 @@ package org.restlet.ext.osgi;
  * 
  * @author Bryan Hunt
  * @author Wolfgang Werner
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public interface ResourceProvider extends RestletProvider {
     /**
      * 

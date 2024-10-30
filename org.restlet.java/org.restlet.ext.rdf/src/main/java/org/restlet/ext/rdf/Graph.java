@@ -20,7 +20,9 @@ import org.restlet.representation.Representation;
  * model.
  * 
  * @author Jerome Louvel
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Graph extends CopyOnWriteArraySet<Link> {
 
     /** The serialization unique identifier. */

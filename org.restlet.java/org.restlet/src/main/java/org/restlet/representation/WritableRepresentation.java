@@ -27,7 +27,9 @@ import org.restlet.engine.io.IoUtils;
  * needed.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public abstract class WritableRepresentation extends ChannelRepresentation {
 	/**
 	 * Constructor.

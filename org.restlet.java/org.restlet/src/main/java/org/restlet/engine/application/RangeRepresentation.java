@@ -63,6 +63,7 @@ public class RangeRepresentation extends WrapperRepresentation {
 	}
 
 	@Override
+	@Deprecated
 	public java.nio.channels.ReadableByteChannel getChannel() throws IOException {
 		return IoUtils.getChannel(getStream());
 	}
@@ -117,6 +118,7 @@ public class RangeRepresentation extends WrapperRepresentation {
 	}
 
 	@Override
+	@Deprecated
 	public void write(WritableByteChannel writableChannel) throws IOException {
 		OutputStream os = IoUtils.getStream(writableChannel);
 		write(os);

@@ -81,7 +81,7 @@
         <lib-swagger-version>1.5.3-M1</lib-swagger-version>
         <lib-testng-version>7.5.1</lib-testng-version>
         <lib-thymeleaf-version>3.0.11.RELEASE</lib-thymeleaf-version>
-        <lib-velocity-version>2.3</lib-velocity-version>
+        <lib-velocity-version>2.4.1</lib-velocity-version>
         <lib-woodstock-core-version>4.4.1</lib-woodstock-core-version>
     </properties>
 

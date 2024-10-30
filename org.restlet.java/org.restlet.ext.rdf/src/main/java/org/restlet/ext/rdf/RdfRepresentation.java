@@ -34,7 +34,9 @@ import org.restlet.representation.WriterRepresentation;
  * deserialize a {@link Graph}.
  * 
  * @author Jerome Louvel
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfRepresentation extends WriterRepresentation {
 
     /** The inner graph of links. */

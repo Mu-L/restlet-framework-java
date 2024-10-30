@@ -35,6 +35,7 @@ public final class Method implements Comparable<Method> {
 
     private static final String BASE_HTTP = "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html";
 
+	@Deprecated
     private static final String BASE_WEBDAV = "http://www.webdav.org/specs/rfc2518.html";
 
     /**
@@ -56,7 +57,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_COPY">WEBDAV
      *      RFC - 8.8 COPY Method</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method COPY = new Method(
             "COPY",
             "Creates a duplicate of the source resource, identified by the Request-URI, in the destination resource, identified by the URI in the Destination header",
@@ -108,7 +111,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_LOCK">WEBDAV
      *      RFC - 8.10 LOCK Method</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method LOCK = new Method("LOCK",
             "Used to take out a lock of any access type (WebDAV)", BASE_WEBDAV
                     + "#METHOD_LOCK", false, false);
@@ -120,7 +125,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_MKCOL">WEBDAV
      *      RFC - 8.3 MKCOL Method</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method MKCOL = new Method("MKCOL",
             "Used to create a new collection (WebDAV)", BASE_WEBDAV
                     + "#METHOD_MKCOL", false, true);
@@ -133,7 +140,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_MOVE">WEBDAV
      *      RFC - 8.3 MKCOL Method</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method MOVE = new Method(
             "MOVE",
             "Logical equivalent of a copy, followed by consistency maintenance processing, followed by a delete of the source (WebDAV)",
@@ -185,7 +194,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_PROPFIND">WEBDAV
      *      RFC - 8.1 PROPFIND</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method PROPFIND = new Method(
             "PROPFIND",
             "Retrieves properties defined on the resource identified by the request URI",
@@ -198,7 +209,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_PROPPATCH">WEBDAV
      *      RFC - 8.2 PROPPATCH</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method PROPPATCH = new Method(
             "PROPPATCH",
             "Processes instructions specified in the request body to set and/or remove properties defined on the resource identified by the request URI",
@@ -237,7 +250,9 @@ public final class Method implements Comparable<Method> {
      * @see <a
      *      href="http://www.webdav.org/specs/rfc2518.html#METHOD_UNLOCK">WEBDAV
      *      RFC - 8.11 UNLOCK Method</a>
-     */
+	 * @deprecated Will be removed in next version.
+	 */
+	@Deprecated
     public static final Method UNLOCK = new Method(
             "UNLOCK",
             "Removes the lock identified by the lock token from the request URI, and all other resources included in the lock",

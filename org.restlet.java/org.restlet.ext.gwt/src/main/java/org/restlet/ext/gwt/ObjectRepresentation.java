@@ -28,7 +28,9 @@ import com.google.gwt.user.server.rpc.impl.ServerSerializationStreamWriter;
  * @author Jerome Louvel
  * @param <T>
  *            The class to serialize.
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class ObjectRepresentation<T> extends StringRepresentation {
 
     /** The wrapped object. */

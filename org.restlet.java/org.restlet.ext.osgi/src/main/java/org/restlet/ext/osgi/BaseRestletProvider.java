@@ -18,8 +18,9 @@ import org.restlet.Restlet;
  * but instead extend an appropriate base provider.
  * 
  * @author Bryan Hunt
- * 
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public abstract class BaseRestletProvider implements RestletProvider {
     private FilterProvider filterProvider;
 

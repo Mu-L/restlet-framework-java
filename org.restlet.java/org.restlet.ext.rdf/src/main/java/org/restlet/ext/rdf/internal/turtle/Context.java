@@ -21,7 +21,9 @@ import org.restlet.data.Reference;
  * the list of known namespaces, keywords.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Context {
 
     /** The value of the "base" keyword. */

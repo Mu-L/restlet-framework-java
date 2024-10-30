@@ -19,7 +19,9 @@ import java.util.List;
  * @param <E>
  *            The type of the property.
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 class ScopedProperty<E> {
     private int[] depths;
 

@@ -24,7 +24,9 @@ import org.restlet.engine.util.SystemUtils;
  *            The second object's type.
  * @param <V>
  *            The third object's type.
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class Triple<T, U, V> {
 
     /** The first object. */

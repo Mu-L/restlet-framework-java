@@ -21,7 +21,9 @@ import org.restlet.representation.Representation;
  * Selection listener notifying new content as an {@link InputStream}.
  * 
  * @author Jerome Louvel
+ * @deprecated NIO will be removed in next major release.
  */
+@Deprecated
 public abstract class ByteReadingListener extends ReadingListener {
 
 	/**

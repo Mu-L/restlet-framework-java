@@ -136,6 +136,7 @@ public class JettyClientCall extends ClientCall {
         return httpResponse == null ? null : httpResponse.getReason();
     }
 
+    @Deprecated
     public WritableByteChannel getRequestEntityChannel() {
         return null;
     }
@@ -148,6 +149,7 @@ public class JettyClientCall extends ClientCall {
         return null;
     }
 
+    @Deprecated
     public ReadableByteChannel getResponseEntityChannel(long size) {
         return null;
     }

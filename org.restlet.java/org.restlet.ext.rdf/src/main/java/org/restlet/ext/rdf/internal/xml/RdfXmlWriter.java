@@ -28,7 +28,9 @@ import org.xml.sax.helpers.AttributesImpl;
  * Handler of RDF content according to the RDF XML syntax.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class RdfXmlWriter extends GraphHandler {
 
     /** The last source reference written, to try to factor statements. */

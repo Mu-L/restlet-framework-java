@@ -21,7 +21,9 @@ import org.restlet.ext.rdf.Link;
  * parse a blank node in N3 documents.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next major release.
  */
+@Deprecated
 public class BlankNodeToken extends LexicalUnit {
 
     /** List of lexical units contained by this blank node. */

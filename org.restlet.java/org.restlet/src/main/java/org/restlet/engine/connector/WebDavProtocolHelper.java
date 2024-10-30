@@ -15,7 +15,9 @@ import org.restlet.data.Method;
  * Protocol helper for the WEBDAV protocol.
  * 
  * @author Thierry Boileau
+ * @deprecated Will be removed in next version.
  */
+@Deprecated
 public class WebDavProtocolHelper extends ProtocolHelper {
 
 	@Override

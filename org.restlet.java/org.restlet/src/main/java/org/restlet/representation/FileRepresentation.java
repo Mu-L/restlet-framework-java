@@ -130,6 +130,7 @@ public class FileRepresentation extends Representation {
 	 * @return A readable byte channel.
 	 */
 	@Override
+	@Deprecated
 	public FileChannel getChannel() throws IOException {
 		try {
 			return new FileInputStream(this.file).getChannel();
@@ -238,6 +239,7 @@ public class FileRepresentation extends Representation {
 	 * @param writableChannel A writable byte channel.
 	 */
 	@Override
+	@Deprecated
 	public void write(WritableByteChannel writableChannel) throws IOException {
 		IoUtils.copy(getChannel(), writableChannel);
 	}

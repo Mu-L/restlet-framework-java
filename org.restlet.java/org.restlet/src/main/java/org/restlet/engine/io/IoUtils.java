@@ -115,7 +115,9 @@ public class IoUtils {
 	 * @param readableChannel The readable channel.
 	 * @param writableChannel The writable channel.
 	 * @throws IOException
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static void copy(ReadableByteChannel readableChannel, WritableByteChannel writableChannel)
 			throws IOException {
 		if ((readableChannel != null) && (writableChannel != null)) {
@@ -276,7 +278,9 @@ public class IoUtils {
 	 * 
 	 * @param inputStream The input stream to convert.
 	 * @return A readable byte channel.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static ReadableByteChannel getChannel(InputStream inputStream) throws IOException {
 		ReadableByteChannel result = null;
 
@@ -294,7 +298,9 @@ public class IoUtils {
 	 * 
 	 * @param outputStream The output stream.
 	 * @return A writable byte channel.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static WritableByteChannel getChannel(OutputStream outputStream) {
 		return (outputStream != null) ? Channels.newChannel(outputStream) : null;
 	}
@@ -308,7 +314,9 @@ public class IoUtils {
 	 *                       from.
 	 * @return A readable byte channel.
 	 * @throws IOException
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static ReadableByteChannel getChannel(final Representation representation) throws IOException {
 		ReadableByteChannel result = null;
 
@@ -443,7 +451,9 @@ public class IoUtils {
 	 * 
 	 * @param readableChannel The readable byte channel.
 	 * @return An input stream based on a given readable byte channel.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static InputStream getStream(ReadableByteChannel readableChannel) {
 		InputStream result = null;
 
@@ -531,7 +541,9 @@ public class IoUtils {
 	 * 
 	 * @param writableChannel The writable byte channel.
 	 * @return An output stream based on a given writable byte channel.
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static OutputStream getStream(WritableByteChannel writableChannel) {
 		OutputStream result = null;
 
@@ -613,7 +625,9 @@ public class IoUtils {
 	 * @param selector     The associated selector.
 	 * @param selectionKey The used selection key.
 	 * @throws IOException
+	 * @deprecated NIO will be removed in next major release.
 	 */
+	@Deprecated
 	public static void release(Selector selector, SelectionKey selectionKey) throws IOException {
 		if (selectionKey != null) {
 			// The key you registered on the temporary selector
