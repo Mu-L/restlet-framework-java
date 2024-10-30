@@ -6,17 +6,12 @@
 ## The first REST framework for Java
 
 Launched in 2005, Restlet Framework was the first open source framework embracing [REST](https://en.wikipedia.org/wiki/REST)
-in the Java world.
+in the Java world. Since its inception, its Java API has closely matched the concepts and terms of the REST architecture stlye and the HTTP protocol.
+It offers powerful and dynamic routing and security features, a unified client and server Java API.
 
-Since its inception, its Java API has closely matched the concepts and terms of the REST architecture stlye and the HTTP protocol.
-It also offers powerful and dynamic routing and security features, a unified client and server Java API. While it can be embedded
-within a Servlet container, it can also operate as a standalone library with zero mandatory dependency, resulting in a small
-footprint, while enabling the development of any RESTful web API or application.
-
-It is available in a Java edition compatible with Java SE/EE, Google App Engine, OSGi and Android environments,
-as well as in a separate GWT edition.
-
-http://restlet.talend.com
+While it can be embedded within a Servlet container, it can also operate as a standalone library with zero mandatory dependency, resulting in a small
+footprint, while enabling the development of any RESTful web API or application. It is available in a Java edition compatible with Java SE/EE,
+Google App Engine, OSGi and Android environments, as well as in a separate GWT edition.
 
 ## Learn more
 
