@@ -7,10 +7,9 @@
  * Restlet is a registered trademark of QlikTech International AB.
  */
 
-package org.restlet.ext.net.internal;
+package org.restlet.engine.security;
 
 import org.restlet.data.ChallengeScheme;
-import org.restlet.engine.security.AuthenticatorHelper;
 
 /**
  * Implements the SDC adhoc authentication. This challenge scheme is used to
