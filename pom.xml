@@ -19,6 +19,32 @@
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
     </scm>
 
+    <licenses>
+        <license>
+            <name>Apache 2.0 license</name>
+            <url>https://opensource.org/license/apache-2-0/</url>
+            <distribution>repo</distribution>
+        </license>
+        <license>
+            <name>EPL 1.0 license</name>
+            <url>https://opensource.org/license/epl-1-0/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Jerome Louvel</name>
+            <id>jlouvel</id>
+            <url>https://github.com/jlouvel</url>
+        </developer>
+        <developer>
+            <name>Thierru Boileau</name>
+            <id>thboileau</id>
+            <url>https://github.com/thboileau</url>
+        </developer>
+    </developers>
+
     <properties>
         <release>false</release>
         <java.version>1.8</java.version>
@@ -157,17 +183,6 @@
                     <value>ossrh</value>
                 </property>
             </activation>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-                </snapshotRepository>
-                <repository>
-                    <id>ossrh</id>
-                    <name>Central Repository OSSRH</name>
-                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-                </repository>
-            </distributionManagement>
             <build>
                 <plugins>
                     <plugin>
@@ -195,7 +210,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.2.4</version>
+                        <version>3.2.7</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -214,20 +229,18 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.13</version>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.6.0</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <publishingServerId>central</publishingServerId>
                         </configuration>
                     </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <version>3.4.1</version>
+                        <version>3.5.0</version>
                         <executions>
                             <execution>
                                 <id>enforce</id>
@@ -251,7 +264,7 @@
                             <dependency>
                                 <groupId>org.kordamp.maven</groupId>
                                 <artifactId>pomchecker-enforcer-rules</artifactId>
-                                <version>1.11.0</version>
+                                <version>1.14.0</version>
                             </dependency>
                         </dependencies>
                     </plugin>
@@ -274,27 +287,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <licenses>
-        <license>
-            <name>Apache 2.0 license</name>
-            <url>https://opensource.org/license/apache-2-0/</url>
-            <distribution>repo</distribution>
-        </license>
-        <license>
-            <name>EPL 1.0 license</name>
-            <url>https://opensource.org/license/epl-1-0/</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <name>Jerome Louvel</name>
-            <id>jlouvel</id>
-            <url>https://github.com/jlouvel</url>
-        </developer>
-    </developers>
 
     <build>
         <resources>
