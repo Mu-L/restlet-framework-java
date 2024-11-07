@@ -1,7 +1,7 @@
 Changes log
 ===========
 
-- 2.5 Milestone 2 (??-11-2024)
+- 2.5 Release Candidate 1 (??-11-2024)
     - Enhancements
       - Changed the minimum requirements back to Java 8 like for Restlet Framework 2.4 to facilitate upgrade.
       - Transitioned project to native Maven including code base, build and delivery.
@@ -21,6 +21,7 @@ Changes log
       - Renamed extension Inject into Guice as it isn't truly generic.
       - Updated the links in all Javadocs file for accuracy.
       - Deprecated GAE, OSGi and RDF extensions for removal in next major release.
+      - Deprecated SDC, SIP protocol and challenge scheme
       - Deprecated NIO flavor of Restlet API for removal in next major release, with plan to use
         virtual threads instead to achieve additional scalability and reactive behavior.
       - Removed code deprecated in version 2.4, including native Restlet XML configuration mechasism.

@@ -106,6 +106,7 @@ public final class ChallengeScheme {
     private static Map<String, ChallengeScheme> SCHEMES;
 
     /** Secure Data Connector scheme. */
+    @Deprecated
     public static final ChallengeScheme SDC = new ChallengeScheme("SDC", "SDC",
             "Secure Data Connector authentication");
 

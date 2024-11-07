@@ -114,12 +114,15 @@ public final class Protocol {
 	 * SDC is natively available on the Google App Engine platform and via a special
 	 * Restlet extension on other platforms.
 	 */
+    @Deprecated
 	public static final Protocol SDC = new Protocol("sdc", "SDC", "Secure Data Connector Protocol", UNKNOWN_PORT, true);
 
 	/** SIP protocol. */
+    @Deprecated
 	public static final Protocol SIP = new Protocol("sip", "SIP", "Session Initiation Protocol", 5060, "2.0");
 
 	/** SIPS protocol (via SSL socket). */
+    @Deprecated
 	public static final Protocol SIPS = new Protocol("sips", "SIPS", "SIP", "Session Initiation Protocol (Secure)",
 			5061, true, "2.0");
 

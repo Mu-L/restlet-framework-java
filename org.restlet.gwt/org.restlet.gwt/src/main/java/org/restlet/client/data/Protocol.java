@@ -114,6 +114,7 @@ public final class Protocol {
      * SDC is natively available on the Google App Engine platform and via a
      * special Restlet extension on other platforms.
      */
+    @Deprecated
     public static final Protocol SDC = new Protocol("sdc", "SDC",
             "Secure Data Connector Protocol", UNKNOWN_PORT, true);
 
