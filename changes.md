@@ -5,7 +5,7 @@ Changes log
     - Enhancements
       - Changed the minimum requirements back to Java 8 like for Restlet Framework 2.4 to facilitate upgrade.
       - Transitioned project to native Maven including code base, build and delivery.
-      - Artifacts are now published in Maven Central and Sonatype OSS repository for snapshots and only there.
+      - Artifacts are now published in Maven Central and GoitHub Packages repository for snapshots and only there.
       - Updated all libraries used as dependency for various extensions.
       - RestletFileUpload can now dynamically adapt to Java SE or Java EE environments.
     - Bugs fixed
