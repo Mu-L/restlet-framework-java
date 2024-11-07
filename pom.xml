@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <name>Restlet Framework</name>
-    <description>Lightweight REST framework</description>
+    <description>The first REST API framework for Java</description>
     <url>https://restlet.talend.com/</url>
     <inceptionYear>2005</inceptionYear>
 
