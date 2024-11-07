@@ -1,17 +1,14 @@
 # Restlet Framework
 
-
 [![Build Status](https://github.com/restlet/restlet-framework-java/actions/workflows/build.yaml/badge.svg)](https://github.com/restlet/restlet-framework-java/actions/workflows/ci.yaml) [![Apache License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## The first REST framework for Java
+## Overview 
 
-Launched in 2005, Restlet Framework was the first open source framework embracing [REST](https://en.wikipedia.org/wiki/REST)
-in the Java world. Since its inception, its Java API has closely matched the concepts and terms of the REST architecture stlye and the HTTP protocol.
-It offers powerful and dynamic routing and security features, a unified client and server Java API.
+Launched in 2005, Restlet Framework is the first open source project that embraced REST in the Java world.
 
-While it can be embedded within a Servlet container, it can also operate as a standalone library with zero mandatory dependency, resulting in a small
-footprint, while enabling the development of any RESTful web API or application. It is available in a Java edition compatible with Java SE/EE,
-Google App Engine, OSGi and Android environments, as well as in a separate GWT edition.
+Since its inception, its Java API has closely matched the concepts and terminology of the REST architecture stlye as well as the HTTP protocol. It includes powerful and dynamic routing and security features, as well as fully unified way to develop both web clients, web servers or both at the same time. Its power and maturity gives you an alternative to developping directly with the Servlet API or with the JAX-RS API.
+
+While Restlet applications can be deployed in Servlet containers, they can also run directly in JVMs with minimal dependencies, resulting in a small footprint suitable for microservices. Restlet Framework is available in a Java edition compatible with Java SE/EE, GAE, OSGi and Android environments, as well as in a separate GWT edition. It offers several extensions for common use cases and can be easily extended if needed.
 
 ## Learn more
 
