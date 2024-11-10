@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.fileupload</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - FileUpload</name>
+	<name>Restlet Framework - FileUpload extension</name>
 	<description>Integration with Apache FileUpload.</description>
 
 	<dependencies>

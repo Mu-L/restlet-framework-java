@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.jaas</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - JAAS</name>
+	<name>Restlet Framework - JAAS extension</name>
 	<description>Support for JAAS based security.</description>
 
 	<dependencies>

@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.rdf</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - RDF</name>
+	<name>Restlet Framework - RDF extension</name>
 	<description>Support for the RDF parsing and generation.</description>
 
 	<dependencies>

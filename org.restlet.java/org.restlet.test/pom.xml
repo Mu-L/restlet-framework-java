@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>org.restlet.test</artifactId>
-    <name>Restlet Unit Tests</name>
+    <name>Restlet Framework - Unit Tests</name>
     <description>All Restlet unit tests.</description>
     <build>
         <testSourceDirectory>${basedir}/src/main/java</testSourceDirectory>

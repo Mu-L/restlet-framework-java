@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.slf4j</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - SLF4J</name>
+	<name>Restlet Framework - SLF4J extension</name>
 	<description>Support for the SLF4J logging bridge.</description>
 
 	<dependencies>

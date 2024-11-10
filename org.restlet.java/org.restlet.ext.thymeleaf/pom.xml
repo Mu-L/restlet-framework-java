@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.thymeleaf</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - Thymeleaf</name>
+	<name>Restlet Framework - Thymeleaf extension</name>
 	<description>Integration with Thymeleaf.</description>
 
 	<dependencies>

@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.gson</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - GSON</name>
+	<name>Restlet Framework - GSON extension</name>
 	<description>Support for GSON representations.</description>
 
 	<dependencies>

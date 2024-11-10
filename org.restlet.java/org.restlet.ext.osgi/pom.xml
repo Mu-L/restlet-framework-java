@@ -11,7 +11,7 @@
 
     <artifactId>org.restlet.ext.osgi</artifactId>
     <packaging>bundle</packaging>
-    <name>Restlet Extension - OSGi</name>
+    <name>Restlet Framework - OSGi extension</name>
     <description>Support for the OSGi specification.</description>
 
     <dependencies>

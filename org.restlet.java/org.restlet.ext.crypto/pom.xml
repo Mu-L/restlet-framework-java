@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.crypto</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - Crypto</name>
+	<name>Restlet Framework - Crypto extension</name>
 	<description>Support for cryptography.</description>
 
 	<dependencies>

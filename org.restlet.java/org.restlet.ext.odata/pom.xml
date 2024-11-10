@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.odata</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - OData</name>
+	<name>Restlet Framework - OData extension</name>
 	<description>Integration with OData services.</description>
 
 	<dependencies>

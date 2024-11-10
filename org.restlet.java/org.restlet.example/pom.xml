@@ -10,8 +10,8 @@
     </parent>
 
     <artifactId>org.restlet.example</artifactId>
-    <name>Restlet Examples</name>
-    <description>Various examples including those from the tutorial</description>
+    <name>Restlet Framework - Examples</name>
+    <description>Example projects including those from the tutorial</description>
 
     <dependencies>
         <dependency>

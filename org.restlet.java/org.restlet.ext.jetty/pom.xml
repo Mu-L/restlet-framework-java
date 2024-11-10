@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.jetty</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - Jetty</name>
+	<name>Restlet Framework - Jetty extension</name>
 	<description>Integration with Jetty.</description>
 
 	<dependencies>

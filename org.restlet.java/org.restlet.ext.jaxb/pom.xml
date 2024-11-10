@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.jaxb</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - JAXB</name>
+	<name>Restlet Framework - JAXB extension</name>
 	<description>Integration with Java XML Binding.</description>
 
 	<dependencies>

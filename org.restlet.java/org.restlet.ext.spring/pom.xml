@@ -11,7 +11,7 @@
 
     <artifactId>org.restlet.ext.spring</artifactId>
     <packaging>bundle</packaging>
-    <name>Restlet Extension - Spring Framework</name>
+    <name>Restlet Framework - Spring extension</name>
     <description>Integration with Spring Framework.</description>
 
     <dependencies>

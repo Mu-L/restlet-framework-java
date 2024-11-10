@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.html</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - HTML</name>
+	<name>Restlet Framework - HTML extension</name>
 	<description>Support for the HTML (HyperText Markup Language) standard in its 4.0 version and above.</description>
 
 	<dependencies>

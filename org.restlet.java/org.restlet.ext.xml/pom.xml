@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.xml</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - XML</name>
+	<name>Restlet Framework - XML extension</name>
 	<description>Support for the XML documents.</description>
 
 	<dependencies>

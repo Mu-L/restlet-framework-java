@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.httpclient</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - Apache HTTP Client</name>
+	<name>Restlet Framework - HTTP Client extension</name>
 	<description>Integration with Apache Commons HTTP Client.</description>
 
 	<dependencies>

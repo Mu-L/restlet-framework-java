@@ -11,7 +11,7 @@
 
 	<artifactId>org.restlet.ext.jackson</artifactId>
 	<packaging>bundle</packaging>
-	<name>Restlet Extension - Jackson</name>
+	<name>Restlet Framework - Jackson extension</name>
 	<description>Integration with Jackson.</description>
 
 	<dependencies>
