@@ -12,8 +12,8 @@
 	<groupId>org.restlet.java</groupId>
 	<artifactId>org.restlet.java.parent</artifactId>
     <packaging>pom</packaging>
-    <name>Restlet project - Java edition</name>
-    <description>Lightweight REST framework</description>
+    <name>Restlet Framework - Java edition</name>
+    <description>The first REST API framework for Java</description>
 
 	<modules>
 		<module>org.restlet</module>

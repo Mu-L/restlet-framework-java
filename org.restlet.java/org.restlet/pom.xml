@@ -10,9 +10,9 @@
     </parent>
 
     <artifactId>org.restlet</artifactId>
-    <name>Restlet Framework</name>
+    <name>Restlet Framework - Core</name>
     <packaging>bundle</packaging>
-    <description>Launched in 2005, Restlet Framework is the first open source project that embraced REST in the Java world.</description>
+    <description>Restlet API and Engine</description>
 
     <dependencies>
         <dependency>

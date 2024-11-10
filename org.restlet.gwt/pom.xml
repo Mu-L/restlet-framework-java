@@ -12,8 +12,8 @@
 	<groupId>org.restlet.gwt</groupId>
 	<artifactId>org.restlet.gwt.parent</artifactId>
     <packaging>pom</packaging>
-    <name>Restlet project - GWT edition</name>
-    <description>Lightweight REST framework</description>
+    <name>Restlet Framework - GWT edition</name>
+    <description>The first REST API framework for GWT</description>
 
 	<modules>
 		<module>org.restlet.gwt</module>
