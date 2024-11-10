@@ -171,11 +171,11 @@
             </build>
         </profile>
         <profile>
-            <id>ossrh</id>
+            <id>central</id>
             <activation>
                 <property>
                     <name>publish</name>
-                    <value>ossrh</value>
+                    <value>central</value>
                 </property>
             </activation>
             <build>
