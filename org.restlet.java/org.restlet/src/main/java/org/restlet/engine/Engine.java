@@ -84,13 +84,13 @@ public class Engine {
 	private static volatile Level logLevel = Level.INFO;
 
 	/** Major version number. */
-	public static final String MAJOR_NUMBER = "@major-number@";
+	public static final String MAJOR_NUMBER = "2";
 
 	/** Minor version number. */
-	public static final String MINOR_NUMBER = "@minor-number@";
+	public static final String MINOR_NUMBER = "5";
 
 	/** Release number. */
-	public static final String RELEASE_NUMBER = "@release-type@@release-number@";
+	public static final String RELEASE_NUMBER = "-RC1";
 
 	/** The org.restlet log level . */
 	private static volatile Level restletLogLevel;
