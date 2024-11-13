@@ -1,7 +1,7 @@
 Changes log
 ===========
 
-- 2.5 Release Candidate 1 (??-11-2024)
+- 2.5 Release Candidate 1 (12-11-2024)
     - Enhancements
       - Changed the minimum requirements back to Java 8 like for Restlet Framework 2.4 to facilitate upgrade.
       - Transitioned project to native Maven including code base, build and delivery.
