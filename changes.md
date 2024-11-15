@@ -35,8 +35,8 @@ Changes log
       - MemoryRealm.unmap method leads to ArrayOutOfBound exception. Issue #1358.
         Reported by j-perrin.
     - Misc
-      - Removed deprecated extensions emf, javamail, jaxrs, jibx, lucene, nio, 
-        oauth, openid, platform, raml, simple, wadl. Issue #1351.
+      - Removed deprecated extensions EMF, JavaMail, JAX-RS, JibX, Lucene, NIO, 
+        OAuth, OpenID, Platform, RAML, Simple, WADL. Issue #1351.
       - Removed generation of Eclipse p2 artifacts from the build since the 
         Eclipse p2 site is no more maintained.
       - Refresh copyright headers. Issue #1351.
