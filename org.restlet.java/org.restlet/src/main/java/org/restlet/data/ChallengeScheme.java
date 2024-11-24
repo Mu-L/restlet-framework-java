@@ -90,10 +90,12 @@ public final class ChallengeScheme {
 			"OAuth 2.0 message authentication code authentication");
 
 	/** Basic POP scheme. Based on the USER/PASS commands. */
+	@Deprecated
 	public static final ChallengeScheme POP_BASIC = new ChallengeScheme("POP_BASIC", "Basic",
 			"Basic POP authentication (USER/PASS commands)");
 
 	/** Digest POP scheme. Based on the APOP command. */
+    @Deprecated
 	public static final ChallengeScheme POP_DIGEST = new ChallengeScheme("POP_DIGEST", "Digest",
 			"Digest POP authentication (APOP command)");
 
@@ -105,6 +107,7 @@ public final class ChallengeScheme {
 	public static final ChallengeScheme SDC = new ChallengeScheme("SDC", "SDC", "Secure Data Connector authentication");
 
 	/** Plain SMTP scheme. */
+    @Deprecated
 	public static final ChallengeScheme SMTP_PLAIN = new ChallengeScheme("SMTP_PLAIN", "PLAIN",
 			"Plain SMTP authentication");
 

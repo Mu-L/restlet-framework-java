@@ -75,6 +75,7 @@ public final class Protocol {
 	public static final Protocol JAR = new Protocol("jar", "JAR", "Java ARchive", UNKNOWN_PORT, true);
 
 	/** JDBC protocol. */
+    @Deprecated
 	public static final Protocol JDBC = new Protocol("jdbc", "JDBC", "Java DataBase Connectivity", UNKNOWN_PORT);
 
 	/**
@@ -85,6 +86,7 @@ public final class Protocol {
 	 * In order to work, OBAP requires a client connector provided by the extension
 	 * for the OSGi platform.
 	 */
+    @Deprecated
 	public static final Protocol OBAP = new Protocol("obap", "OBAP", "OSGi Bundle Access Protocol",
 			Protocol.UNKNOWN_PORT, true);
 

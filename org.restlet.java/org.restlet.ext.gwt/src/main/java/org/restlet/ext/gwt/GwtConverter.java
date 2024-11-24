@@ -30,9 +30,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
  * serialization format.
  * 
  * @author Jerome Louvel
- * @deprecated Will be removed in next major release.
  */
-@Deprecated
 public class GwtConverter extends ConverterHelper {
 
     /** GWT variant. */

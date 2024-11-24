@@ -8,8 +8,11 @@ Changes log
          authentication may be required. Restlet Framework isn't able to upgrade to Spring Framewortk version 6.0 due to its
          requirement to use Java 8. If you are running Java 17+, please override the Spring dependency in your POM to version 6.0+
     - Misc
-      - Deprecated POP, POPS, SMTP, SMTPS protocol constants and SmtpPlainHelper for upcoming removal as the JavaMail extension
+      - Deprecated JDBC, POP, POPS, SMTP, SMTPS protocol constants and SmtpPlainHelper for upcoming removal as the JavaMail extension
         is no more.
+      - Added missing deprecations.
+      - Removed deprecation of GWT extension as the new intent is to keep the GWT edition and extension maintained in the new
+        major 2.6 release.
 
 - 2.5 Release Candidate 1 (12-11-2024)
     - Enhancements

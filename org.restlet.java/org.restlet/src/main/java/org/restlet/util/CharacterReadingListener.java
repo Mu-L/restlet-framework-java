@@ -23,7 +23,9 @@ import org.restlet.representation.Representation;
  * the representation's character set for proper character decoding.
  * 
  * @author Jerome Louvel
+ * @deprecated
  */
+@Deprecated
 public abstract class CharacterReadingListener extends ByteReadingListener {
 
 	/** The character set of the associated representation. */

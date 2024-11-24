@@ -19,7 +19,9 @@ import org.restlet.representation.Representation;
  * Selection listener notifying new content as a string.
  * 
  * @author Jerome Louvel
+ * @deprecated
  */
+@Deprecated
 public abstract class StringReadingListener extends CharacterReadingListener {
 
 	/**

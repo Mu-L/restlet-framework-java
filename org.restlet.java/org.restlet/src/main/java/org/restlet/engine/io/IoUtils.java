@@ -608,6 +608,7 @@ public class IoUtils {
 	 * @param channel The channel to test.
 	 * @return True if the channel is in blocking mode.
 	 */
+    @Deprecated
 	public static boolean isBlocking(Channel channel) {
 		boolean result = true;
 
