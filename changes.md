@@ -3,7 +3,8 @@ Changes log
 
 - 2.5.0 (??-11-2024)
     - Misc
-      - Deprecated POP, POPS, SMTP, SMTPS protocols for upcoming removal as the JavaMail extension is no more.
+      - Deprecated POP, POPS, SMTP, SMTPS protocol constants and SmtpPlainHelper for upcoming removal as the JavaMail extension
+        is no more.
 
 - 2.5 Release Candidate 1 (12-11-2024)
     - Enhancements

@@ -26,7 +26,9 @@ import org.restlet.util.Series;
  * Implements the SMTP PLAIN authentication.
  * 
  * @author Jerome Louvel
+ * @deprecate Will be removed in the next major version.d
  */
+@Deprecated
 public class SmtpPlainHelper extends AuthenticatorHelper {
 
 	/**
