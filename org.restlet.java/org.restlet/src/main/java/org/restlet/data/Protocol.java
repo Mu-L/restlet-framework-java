@@ -89,9 +89,11 @@ public final class Protocol {
 			Protocol.UNKNOWN_PORT, true);
 
 	/** POP protocol. */
+    @Deprecated
 	public static final Protocol POP = new Protocol("pop", "POP", "Post Office Protocol", 110);
 
 	/** POPS protocol (via SSL/TLS socket).. */
+    @Deprecated
 	public static final Protocol POPS = new Protocol("pops", "POPS", "Post Office Protocol (Secure)", 995, true);
 
 	/**
@@ -127,9 +129,11 @@ public final class Protocol {
 			5061, true, "2.0");
 
 	/** SMTP protocol. */
+    @Deprecated
 	public static final Protocol SMTP = new Protocol("smtp", "SMTP", "Simple Mail Transfer Protocol", 25);
 
 	/** SMTPS protocol (via SSL/TLS socket). */
+    @Deprecated
 	public static final Protocol SMTPS = new Protocol("smtps", "SMTPS", "Simple Mail Transfer Protocol (Secure)", 465,
 			true);
 

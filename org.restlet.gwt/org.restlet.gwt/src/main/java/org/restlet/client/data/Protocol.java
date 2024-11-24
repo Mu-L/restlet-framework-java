@@ -87,10 +87,12 @@ public final class Protocol {
 
 
     /** POP protocol. */
+    @Deprecated
     public static final Protocol POP = new Protocol("pop", "POP",
             "Post Office Protocol", 110);
 
     /** POPS protocol (via SSL/TLS socket).. */
+    @Deprecated
     public static final Protocol POPS = new Protocol("pops", "POPS",
             "Post Office Protocol (Secure)", 995, true);
 
@@ -119,18 +121,22 @@ public final class Protocol {
             "Secure Data Connector Protocol", UNKNOWN_PORT, true);
 
     /** SIP protocol. */
+    @Deprecated
     public static final Protocol SIP = new Protocol("sip", "SIP",
             "Session Initiation Protocol", 5060, "2.0");
 
     /** SIPS protocol (via SSL socket). */
+    @Deprecated
     public static final Protocol SIPS = new Protocol("sips", "SIPS", "SIP",
             "Session Initiation Protocol (Secure)", 5061, true, "2.0");
 
     /** SMTP protocol. */
+    @Deprecated
     public static final Protocol SMTP = new Protocol("smtp", "SMTP",
             "Simple Mail Transfer Protocol", 25);
 
     /** SMTPS protocol (via SSL/TLS socket). */
+    @Deprecated
     public static final Protocol SMTPS = new Protocol("smtps", "SMTPS",
             "Simple Mail Transfer Protocol (Secure)", 465, true);
 
