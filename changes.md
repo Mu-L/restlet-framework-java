@@ -7,12 +7,15 @@ Changes log
          of untrusted data. Depending on how the library is implemented within a product, this issue may or not occur, and
          authentication may be required. Restlet Framework isn't able to upgrade to Spring Framewortk version 6.0 due to its
          requirement to use Java 8. If you are running Java 17+, please override the Spring dependency in your POM to version 6.0+
+    - Bugs fixed
+       - Fixed serialization issues in the GWT edition between client and servver sides.
     - Misc
       - Deprecated JDBC, POP, POPS, SMTP, SMTPS protocol constants and SmtpPlainHelper for upcoming removal as the JavaMail extension
-        is no more.
-      - Added missing deprecations.
+        is no more and added other missing code deprecations.        
       - Removed deprecation of GWT extension as the new intent is to keep the GWT edition and extension maintained in the new
         major 2.6 release.
+      - Deprecated extensions (Apache) HTTP Client, HTML and (Apache) FileUpload as we intend to remove them in version 2.6 to
+        rely instead on the Jetty extension for a more robust alternative. 
 
 - 2.5 Release Candidate 1 (12-11-2024)
     - Enhancements
